@@ -1,0 +1,23 @@
+import { collections } from "@/lib/data"
+import CollectionCard from "@/components/collection-card"
+
+export default function CollectionsPage() {
+  return (
+    <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+      <div className="mb-12">
+        <h1 className="mb-4 text-4xl font-bold tracking-tight">Collections</h1>
+        <p className="max-w-3xl text-balance text-lg text-muted-foreground leading-relaxed">
+          Explore our carefully curated collections, where each piece represents the pinnacle of jewelry craftsmanship
+          and timeless design. From signature classics to regal masterpieces, discover jewelry that celebrates your
+          unique story.
+        </p>
+      </div>
+
+      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        {collections.map((collection) => (
+          <CollectionCard key={collection.id} collection={collection} />
+        ))}
+      </div>
+    </div>
+  )
+}
