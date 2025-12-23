@@ -26,7 +26,7 @@ export default function Home() {
           playsInline
           className="absolute inset-0 h-full w-full object-cover"
         >
-          <source src="/videos/jewelry.mp4" type="video/mp4" />
+          <source src="/videos/White and Gold Elegant Jewelry Video.mp4" type="video/mp4" />
         </video>
 
         {/* Overlay */}
